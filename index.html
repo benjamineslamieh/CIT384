@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="512x512" href="Favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JavaScript -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app-wrapper">
+    <header class="app-header">
+      <h1>Task Manager</h1>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn" id="school-tab">School</button>
+      <button class="tab-btn" id="work-tab">Work</button>
+      <button class="tab-btn" id="personal-tab">Personal</button>
+      <button class="tab-btn" id="other-tab">Other</button>
+      <button class="tab-btn" id="notebook-tab">Notebook</button>
+      <button class="tab-btn" id="group-list-tab">Group List</button>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <div class="list-area">
+      <ul id="task-list"></ul>
+    </div>
+
+    <button class="about-btn" id="about-btn">About the Creator</button>
+  </div>
+
+  <!-- About the Creator Page -->
+  <section id="about-section" class="hidden-section">
+    <div class="about-wrapper">
+      <h2>About the Creator</h2>
+      <p>
+        Hi, my name is Benjamin Eslamieh. I created this task manager website for a school project. I will be furthering this as time goes by and making it a legit website.
+      </p>
+      <button id="back-to-app-btn">Back to Task Manager</button>
+    </div>
+  </section>
+
+  <!-- Notebook Section -->
+  <section id="notebook-section" class="hidden-section">
+    <textarea id="notebook-input" placeholder="Write your thoughts here..."></textarea>
+    <button id="save-note-btn">Save Note</button>
+    <ul id="note-list"></ul>
+    <button id="back-to-app-btn-notebook">Back to Task Manager</button>
+  </section>
+
+  <!-- Group List Section -->
+  <section id="group-list-section" class="hidden-section">
+    <input type="text" id="invite-link" value="http://example.com/invite-link" readonly />
+    <button id="copy-link-btn">Copy Invite Link</button>
+    <button id="back-to-app-btn-group-list">Back to Task Manager</button>
+  </section>
+</body>
+</html>

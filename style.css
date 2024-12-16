@@ -1,0 +1,110 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4b0082; /* Purple background */
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #7b68ee; /* Light purple buttons */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #6a5acd;
+  }
+  
+  /* Task List Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #5a2a9e;
+    color: white;
+  }
+  
+  .task-text {
+    flex: 1;
+  }
+  
+  .task-completed {
+    text-decoration: line-through;
+    animation: cross-out 1s ease-in-out;
+  }
+  
+  @keyframes cross-out {
+    from {
+      text-decoration: none;
+      opacity: 1;
+    }
+    to {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+  }
+  
+  /* Notebook Styles */
+  .hidden-section {
+    display: none;
+  }
+  
+  /* Notebook and Notes Input */
+  #notebook-section {
+    background-color: #5a2a9e;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  #notebook-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .note-item {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4b0082;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .note-delete-btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
